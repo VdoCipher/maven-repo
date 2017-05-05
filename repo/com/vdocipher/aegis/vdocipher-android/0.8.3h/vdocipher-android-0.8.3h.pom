@@ -6,5 +6,17 @@
   <artifactId>vdocipher-android</artifactId>
   <version>0.8.3h</version>
   <packaging>aar</packaging>
-  <description>POM was created from install:install-file</description>
+  <description>VdoCipher sdk for android</description>
+  <dependencies>
+    <dependency>
+        <groupId>com.loopj.android</groupId>
+        <artifactId>android-async-http</artifactId>
+        <version>1.4.9</version>
+    </dependency>
+    <dependency>
+        <groupId>com.google.android.exoplayer</groupId>
+        <artifactId>exoplayer</artifactId>
+        <version>r2.2.0</version>
+    </dependency>
+  </dependencies>
 </project>
