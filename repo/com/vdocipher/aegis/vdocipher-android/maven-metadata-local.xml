@@ -3,12 +3,13 @@
   <groupId>com.vdocipher.aegis</groupId>
   <artifactId>vdocipher-android</artifactId>
   <versioning>
-    <release>0.8.3h</release>
+    <release>0.8.4h</release>
     <versions>
       <version>0.8.0</version>
       <version>0.8.0h</version>
       <version>0.8.3h</version>
+      <version>0.8.4h</version>
     </versions>
-    <lastUpdated>20170505131316</lastUpdated>
+    <lastUpdated>20170506084440</lastUpdated>
   </versioning>
 </metadata>
