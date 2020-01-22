@@ -1,0 +1,32 @@
+#!/bin/bash
+
+if [ $# -lt 3 ]
+  then
+    echo 'Too few arguments. Need version, path to core sdk, and path to cast sdk.'
+    exit 1
+fi
+
+VERSION=$1
+CORE_SDK_PATH=$2
+CAST_SDK_PATH=$3
+
+echo -e "Creating maven artifacts for\nversion $VERSION\ncore sdk at $CORE_SDK_PATH\ncast sdk at $CAST_SDK_PATH"
+echo '========================'
+
+GROUP_ID='com.vdocipher.aegis'
+CORE_ARTIFACT_ID='vdocipher-android'
+CAST_ARTIFACT_ID='vdocipher-cast'
+
+LOCAL_REPO_PATH='./repo'
+
+echo 'Creating core sdk release artifact'
+echo '======================='
+
+mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -DgroupId=$GROUP_ID -DartifactId=$CORE_ARTIFACT_ID -Dversion=$VERSION -Dpackaging=aar -Dfile=$CORE_SDK_PATH -DlocalRepositoryPath=$LOCAL_REPO_PATH -DgeneratePom=true -DcreateChecksum=true
+
+echo 'Creating cast sdk release artifact'
+echo '======================='
+
+mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -DgroupId=$GROUP_ID -DartifactId=$CAST_ARTIFACT_ID -Dversion=$VERSION -Dpackaging=aar -Dfile=$CAST_SDK_PATH -DlocalRepositoryPath=$LOCAL_REPO_PATH -DgeneratePom=true -DcreateChecksum=true
+
+echo 'Done.'
