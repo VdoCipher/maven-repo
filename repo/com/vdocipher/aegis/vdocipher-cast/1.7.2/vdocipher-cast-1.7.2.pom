@@ -6,5 +6,12 @@
   <artifactId>vdocipher-cast</artifactId>
   <version>1.7.2</version>
   <packaging>aar</packaging>
-  <description>POM was created from install:install-file</description>
+  <description>VdoCipher cast plugin for android</description>
+  <dependencies>
+    <dependency>
+      <groupId>com.vdocipher.aegis</groupId>
+      <artifactId>vdocipher-android</artifactId>
+      <version>1.7.2</version>
+    </dependency>
+  </dependencies>
 </project>
