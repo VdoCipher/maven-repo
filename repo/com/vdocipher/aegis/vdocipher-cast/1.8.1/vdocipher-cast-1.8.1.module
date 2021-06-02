@@ -1,0 +1,84 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.vdocipher.aegis",
+    "module": "vdocipher-cast",
+    "version": "1.8.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "72atjwyri5am5gj5kpeucsymva"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-cast-framework",
+          "version": {
+            "requires": "16.2.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "vdocipher-cast-1.8.1.aar",
+          "url": "vdocipher-cast-1.8.1.aar",
+          "size": 33658,
+          "sha512": "bf2880c4a83521e423c5b096069bc8d59bd7becb8467c028cf70af075ebd257446c85277b42d745f00667b664b869be634a6db4a18ccf67b90acb047b5ac9882",
+          "sha256": "b28e78717dca1daa5eadb2780308ea7a395ebc32fec03efa18c88d039af8fff9",
+          "sha1": "58124c7bca9a2e6e6cfa34a8a0e06d45ea699e54",
+          "md5": "5b8d0440a6f336d6d6a1496f0c193906"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.vdocipher.aegis",
+          "module": "vdocipher-android",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-cast-framework",
+          "version": {
+            "requires": "16.2.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "vdocipher-cast-1.8.1.aar",
+          "url": "vdocipher-cast-1.8.1.aar",
+          "size": 33658,
+          "sha512": "bf2880c4a83521e423c5b096069bc8d59bd7becb8467c028cf70af075ebd257446c85277b42d745f00667b664b869be634a6db4a18ccf67b90acb047b5ac9882",
+          "sha256": "b28e78717dca1daa5eadb2780308ea7a395ebc32fec03efa18c88d039af8fff9",
+          "sha1": "58124c7bca9a2e6e6cfa34a8a0e06d45ea699e54",
+          "md5": "5b8d0440a6f336d6d6a1496f0c193906"
+        }
+      ]
+    }
+  ]
+}
