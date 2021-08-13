@@ -1,0 +1,117 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.vdocipher.aegis",
+    "module": "vdocipher-android",
+    "version": "1.9.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "5t3fi6rmgbcjhdhqdxugsxskk4"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "vdocipher-android-1.9.0.aar",
+          "url": "vdocipher-android-1.9.0.aar",
+          "size": 393045,
+          "sha512": "0e22223170f50a14a1fc32a0d5cfcd991add714c9482bc4ad63d882a70b725b9078ce613313b72bd0268ba1edbcdc8f8ca893b0a1f8ec66afac8e3d75224065f",
+          "sha256": "6479d02b00cf3d1fe609defb39921d6fe9a08e9e47135d462c95b27814da0aa8",
+          "sha1": "f5dfdee586b5c3780662c096be2145ff7aeefd6d",
+          "md5": "46105d8a230b1a4c8a83a8c876992422"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.fragment",
+          "module": "fragment",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "com.loopj.android",
+          "module": "android-async-http",
+          "version": {
+            "requires": "1.4.9"
+          }
+        },
+        {
+          "group": "com.google.android.exoplayer",
+          "module": "exoplayer-core",
+          "version": {
+            "requires": "2.14.2"
+          }
+        },
+        {
+          "group": "com.google.android.exoplayer",
+          "module": "exoplayer-dash",
+          "version": {
+            "requires": "2.14.2"
+          }
+        },
+        {
+          "group": "com.google.android.exoplayer",
+          "module": "exoplayer-hls",
+          "version": {
+            "requires": "2.14.2"
+          }
+        },
+        {
+          "group": "com.google.android.exoplayer",
+          "module": "exoplayer-ui",
+          "version": {
+            "requires": "2.14.2"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-safetynet",
+          "version": {
+            "requires": "17.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "vdocipher-android-1.9.0.aar",
+          "url": "vdocipher-android-1.9.0.aar",
+          "size": 393045,
+          "sha512": "0e22223170f50a14a1fc32a0d5cfcd991add714c9482bc4ad63d882a70b725b9078ce613313b72bd0268ba1edbcdc8f8ca893b0a1f8ec66afac8e3d75224065f",
+          "sha256": "6479d02b00cf3d1fe609defb39921d6fe9a08e9e47135d462c95b27814da0aa8",
+          "sha1": "f5dfdee586b5c3780662c096be2145ff7aeefd6d",
+          "md5": "46105d8a230b1a4c8a83a8c876992422"
+        }
+      ]
+    }
+  ]
+}
