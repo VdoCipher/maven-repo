@@ -1,0 +1,90 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.vdocipher.aegis",
+    "module": "vdocipher-cast",
+    "version": "1.11.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-cast-framework",
+          "version": {
+            "requires": "21.0.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "vdocipher-cast-1.11.0.aar",
+          "url": "vdocipher-cast-1.11.0.aar",
+          "size": 37899,
+          "sha512": "556899eeeb36cd99167d1e07d611b623870cc613a6298097ce16bd0b2f43b345ee833758a15c4c99a5c1d73b7f918b42a773321c05571ee3b48c61544da8d86b",
+          "sha256": "1d633fdf14bc8988fa1194d09e948df5dd61dca27c7cd9305592a43b00325eb3",
+          "sha1": "fc98bdb3fb763fa75c691ed471489b6d895d5f1c",
+          "md5": "56037deca549f7fcb68c1e2d636f8c6e"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.multidex",
+          "module": "multidex",
+          "version": {
+            "requires": "2.0.1"
+          }
+        },
+        {
+          "group": "com.vdocipher.aegis",
+          "module": "vdocipher-android",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-cast-framework",
+          "version": {
+            "requires": "21.0.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "vdocipher-cast-1.11.0.aar",
+          "url": "vdocipher-cast-1.11.0.aar",
+          "size": 37899,
+          "sha512": "556899eeeb36cd99167d1e07d611b623870cc613a6298097ce16bd0b2f43b345ee833758a15c4c99a5c1d73b7f918b42a773321c05571ee3b48c61544da8d86b",
+          "sha256": "1d633fdf14bc8988fa1194d09e948df5dd61dca27c7cd9305592a43b00325eb3",
+          "sha1": "fc98bdb3fb763fa75c691ed471489b6d895d5f1c",
+          "md5": "56037deca549f7fcb68c1e2d636f8c6e"
+        }
+      ]
+    }
+  ]
+}
